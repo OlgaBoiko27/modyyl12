@@ -238,8 +238,12 @@ function getPerfectPartner($surname, $name, $patronomyc, $persons) {
     $percentPerfect = rand(5000, 10000) / 100;                  // от 50% до 100%
     
     return <<< HEREDOC
+        
+        **********************
     $shortNameNorm + $personShortNameRand =
-    ♡ Идеально на $percentPerfect% ♡
+    ♡♡♡♡♡ Идеально на $percentPerfect% ♡♡♡♡♡
+        **********************
+        
     HEREDOC;
 }
 echo getPerfectPartner($surname, $name, $patronomyc, $example_persons_array) . PHP_EOL;
